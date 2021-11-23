@@ -1,0 +1,134 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.bg--orange {
+    background: hsl(31, 77%, 52%);
+}
+
+.bg--very-dark-cyan {
+    background: hsl(179, 100%, 13%);
+}
+
+.bg--dark-cyan {
+    background: hsl(184, 100%, 22%);
+}
+
+.color--orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.color--dark-cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.color--very-dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
+
+body {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1em;
+    height: 99vh;
+    font-family: 'Lexend Deca', sans-serif;
+    ;
+}
+
+.three-column-flex {
+    display: flex;
+    flex-direction: column;
+    width: min(80%, 50em)
+}
+
+.card {
+    padding-inline: 2em;
+}
+
+.card:first-of-type {
+    border-radius: .5em .5em 0 0;
+}
+
+.card:last-of-type {
+    border-radius: 0 0 .5em .5em;
+}
+
+.card-image {
+    margin-top: 1.5em;
+    padding-block: 1em;
+    width: 4em;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.725rem;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding-bottom: 1em;
+}
+
+.btn {
+    display: block;
+    padding: .8em 1.3em;
+    margin-top: auto;
+    margin-bottom: 2em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    background: hsl(0, 0%, 95%);
+    border-color: transparent;
+    border: 2px solid;
+    width: max-content;
+}
+
+.btn:hover,
+.btn:focus {
+    background: inherit;
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:35em) {
+    .three-column-flex {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    .card:first-of-type {
+        border-radius: .5em 0 0 .5em;
+    }
+    .card:last-of-type {
+        border-radius: 0 .5em .5em 0;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+}
